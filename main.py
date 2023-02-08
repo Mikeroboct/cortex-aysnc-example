@@ -11,9 +11,17 @@ class Data(BaseModel):
     msg: str
 
 
+class EnrichData():
+    msg: str
+    results: str
+
+
 @app.post("/")
 def handle_post(data: Data):
-    return data
+    result = EnrichData()
+    result.msg = data.msg
+    result.results = "New Value Here"
+    return result
 
 
 @app.get("/health")

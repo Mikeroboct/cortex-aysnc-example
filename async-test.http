@@ -1,0 +1,9 @@
+POST http://aa825cfeb4703452d86d39134728ae7d-f851856e8782558b.elb.us-east-1.amazonaws.com/cortex-async-dev
+Content-Type: application/json
+
+{"msg": "hello world"}
+
+
+###
+
+GET http://aa825cfeb4703452d86d39134728ae7d-f851856e8782558b.elb.us-east-1.amazonaws.com/cortex-async-dev/c03f9a66-23de-4515-adb4-2db5e93502c3

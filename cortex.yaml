@@ -1,0 +1,7 @@
+# cortex.yaml
+- name: cortex-async-dev
+  kind: AsyncAPI
+  pod:
+    containers:
+    - name: api
+      image: 141351496096.dkr.ecr.us-east-1.amazonaws.com/cortex-async-example:1.0.1
